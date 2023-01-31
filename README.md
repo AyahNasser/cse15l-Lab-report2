@@ -77,6 +77,6 @@ class StringServer {
 - I find it very intersting that we can write a web server, and we can name it what we want. Also, I learned how to make one of either strings or numbers. 
 - Also, I leanred how to to compile and run JUnit since it is an external library.
 - I also leanred that using mac commands on a windows gives errors and vice versa because the command set for each operating systems is different. 
-- 
+
 
 
