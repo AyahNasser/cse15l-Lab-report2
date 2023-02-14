@@ -45,26 +45,21 @@ class StringServer {
 }
 ````
 
-- Also, here is a screenshot of the code as well. 
-<img width="1440" alt="image" src="https://user-images.githubusercontent.com/122571192/215664533-b8dd5371-101f-4b97-b698-5e598f3a3a18.png">
-
-
-- Second, after using /add-message using the code I wrote, I get two outputs. 
-- First one is using /add-message?s=Hello
+- Second, after using ``` /add-message ``` using the code I wrote, I get two outputs. 
+- First one is using ```` /add-message?s=Hello ````
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/122571192/215665882-11e2ca06-8e62-410b-8d10-e3b4b7c7bbd0.png">
 
 - In this screenshot, we are adding a string, which is "Hello" here, and the methods that were called in my code is, handleRequest. 
 - The relevant arguments are the url, which is the name of the web we are creating. After that the string we are adding. 
-- We already changed the value from int (which is the one we had in the lab), to a value of String, so the web accepts a string. Also, if we try to write a number, that number will be treated as a string, and not like an integer, which means we will not be able to write a number and increase it. 
+- We already changed the value from int (which is the one we had in the lab), to a value of String, so the web accepts a string. The code will check the url, and when it finds the /add key word, it will add the string (message) to the existing array as a new element. Also, if we try to write a number, that number will be treated as a string, and not like an integer, which means we will not be able to write a number and increase it. 
 
 
-- Second screenshot, was for using /add-message?s=How are you, and we get. 
+- Second screenshot, was for using ```/add-message?s=How are you```, and we get. 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/122571192/215666911-ad5398a8-9c19-48df-8b02-25808cd4a09d.png">
 - In this screenshot, we are adding another string to the one we had originally, which is "How are you" here, and the methods that were called in my code is, handleRequest. 
 - However, we are making sure here that we are only adding and not replacing the previous method, as well as adding another line. 
-- The relevant arguments are the url, which is the name of the web we are creating. After that the string we are adding. 
-- Also, here seem reasning for the first picture applies here. 
--
+- The relevant arguments are the url, which is the name of the web we are creating. It will add the string (message) to teh array again as a new element of the array, which means it will add an index for this new element.The same reasoning for the first picture applies here. 
+
 
 **Part 2**
 - **Bug in Array reversed and reversedInPlace**
