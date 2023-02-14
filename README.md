@@ -51,7 +51,7 @@ class StringServer {
 
 - In this screenshot, we are adding a string, which is "Hello" here, and the methods that were called in my code is, handleRequest. 
 - The relevant arguments are the url, which is the name of the web we are creating. After that the string we are adding. 
-- We already changed the value from int (which is the one we had in the lab), to a value of String, so the web accepts a string. The code will check the url, and when it finds the /add key word, it will add the string (message) to the existing array as a new element. Also, if we try to write a number, that number will be treated as a string, and not like an integer, which means we will not be able to write a number and increase it. 
+- We already changed the value from int (which is the one we had in the lab), to a value of String, so the web accepts a string. The code will check the url, and when it finds the ```/add``` key word, it will add the string (message) to the existing array as a new element. Also, if we try to write a number, that number will be treated as a string, and not like an integer, which means we will not be able to write a number and increase it. 
 
 
 - Second screenshot, was for using ```/add-message?s=How are you```, and we get. 
@@ -61,7 +61,9 @@ class StringServer {
 - The relevant arguments are the url, which is the name of the web we are creating. It will add the string (message) to teh array again as a new element of the array, which means it will add an index for this new element.The same reasoning for the first picture applies here. 
 
 
+
 **Part 2**
+
 - **Bug in Array reversed and reversedInPlace**
 - The code of failure-inducing input for the buggy program
 
@@ -91,7 +93,7 @@ public void testReverseInPlace() {
 `````
 
 - The symptom, as the output of running the tests:
-- <img width="996" alt="Screenshot 2023-02-13 at 5 22 06 PM" src="https://user-images.githubusercontent.com/122571192/218613777-78523458-95e5-418c-851a-21251d157994.png">
+<img width="996" alt="Screenshot 2023-02-13 at 5 22 06 PM" src="https://user-images.githubusercontent.com/122571192/218613777-78523458-95e5-418c-851a-21251d157994.png">
 
 - The bug before: 
 - the reverseInPlace method:
