@@ -87,6 +87,7 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{3},(input1));
     
 }
+
 `````
 
 - The symptom, as the output of running the tests:
@@ -123,9 +124,9 @@ static int[] reversed(int[] arr) {
 
 - After Fixing the reverseInPlace method:
 
-
+```
   static void reverseInPlace(int[] arr) {
-    ````
+   
     for(int i = 0; i < arr.length /2; i++) {
        
       int j;
@@ -134,10 +135,13 @@ static int[] reversed(int[] arr) {
       arr[arr.length - i - 1] = j;
     }
   }
-  `````
+  
+  ```
+  
   
 - After Fixing the reversed method:
- ``````
+
+````
  static int[] reversed(int[] arr) {
 
     int[] newArray = new int[arr.length];
@@ -150,7 +154,7 @@ static int[] reversed(int[] arr) {
     return newArray;
     
   }
-  `````
+  ````
   
   - Briefly describe why the fix addresses the issue.
   - For example, in the reverse method the new array created was never filled with the values from the original array. However, in order for us to fix that we first filled the new array created with the values from the previous one. Then we stored the length of the original array in a variable to be able to add the last element in the array later. We started filling the new array from end to begining by using (j-1), and j is the length of the original array, and to get to the last element we need to substract one.  
